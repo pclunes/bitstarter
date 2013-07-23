@@ -1,20 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>My First Bitstarter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<meta charset="utf-8">
+	<title>Give&Take</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
-    <style type="text/css">
-    
-    /* Large desktop */
+	<style type="text/css">
+      body {
+        padding-top: 20px;
+        padding-bottom: 40px;
+      }
+
+      /* Custom container */
+      .container-narrow {
+        margin: 0 auto;
+        max-width: 1000px;
+      }
+      .container-narrow > hr {
+        margin: 30px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 60px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 72px;
+        line-height: 1;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 0px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+
+      /* from index.html */
+
+   /* Large desktop */
     @media (min-width: 980px){
 	body {
 	  padding-top: 60px;
@@ -100,48 +140,56 @@
 	color: #ccccff;
      }  
 
-   </style>
-   </head>
-   <body>
-  <!-- Mobile-friendly navbar adapted from example. -->
-  <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
-  <div class="navbar navbar-inverse navbar-fixed-top">
-   <div class="navbar-inner">
+     .container {
+     	max-width: 100%;
+     }
+
+
+    </style>
+	<link href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Le fav and touch icons -->
+	<link rel="shortcut icon" href="http://twitter.github.com/bootstrap/assets/images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="http://twitter.github.com/bootstrap/assets/images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="http://twitter.github.com/bootstrap/assets/images/apple-touch-icon-114x114.png">
+</head>
+<body>
+
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <h3 class="muted">Give&Take</h3>
+      </div>
+
+      <hr>
+
+      <div class="jumbotron">
+        <h1>Give&Take</h1>
+        <p class="lead">Donations made easy! 
+        	<br/> Find people who <b>need</b> what you have. Find people who <b>have</b> what you need.</p>
+        <a class="btn btn-large btn-success" href="#">Back this project</a>
+      </div>
+
+      <hr>
+
+</div>
     <div class="container">
-      <button type="button" class="btn btn-navbar"
-              data-toggle="collapse" data-target=".nav-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="brand" href="#">Bitstarter</a>
-      <div class="nav-collapse collapse">
-	<ul class="nav">
-	  <li class="active"><a href="#">Home</a></li>
-	  <li><a href="#about">About</a></li>
-	  <li><a href="#contact">Contact</a></li>
-	</ul>
-      </div> <!--/.nav-collapse -->
-     </div>
-    </div>
-   </div>
 
-   <!-- We use row-fluid inside containers to achieve a resizable layout -->
-   <div class="container">
-
-     <div class="row-fluid heading">
-       <div class="span12">
-         <h1>Product</h1>
-       </div>
-    </div>
-    <div class="row-fluid subheading">
-       <div class="span12">
-         <p class="lead">One sentence description.</p>
-       </div>
-    </div>
+    
     <div class="row-fluid pitch">
        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://placehold.it/480x300"></img>
+          <img class="img-polaroid" width="480px" height="300px" src="http://i.imgur.com/TvxNDIr.jpg"></img>
        </div>
        
        <div class="span5 actions">
@@ -149,29 +197,29 @@
           <div class="statistics">
             <div class="span4">
                <div class="linediv-l">
-                <h3>1000</h3><p>backers</p>
+                <h3>0</h3><p>backers</p>
                </div>
             </div>
             <div class="span4">
               <div class="linediv-c">
-                <h3>$6000</h3><p>of $10,000</p>
+                <h3>$0</h3><p>of $1,000</p>
               </div>
             </div>
             <div class="span4">
                <div class="linediv-r">
-                <h3>10</h3><p>days left</p>
+                <h3>30</h3><p>days left</p>
                </div>
             </div> 
           </div>
         </div>
         <div class="span10 offset1">
          <div class="thermometer progress active">
-            <div class="bar bar-success" style="width: 60%"></div>
-            <div class="bar bar-warning" style="width: 40%"></div>
+            <div class="bar bar-success" style="width: 0%"></div>
+            <div class="bar bar-warning" style="width: 100%"></div>
          </div>
         </div>
         <div class="span6 offset3 order">
-          <button class="btn btn-success btn-large">Preorder</button>
+          <button class="btn btn-success btn-large">Back this project</button>
         </div>
         <div class="span8 offset2 social">
         <button class="btn btn-twitter"><i class="icon-twitter"></i>|  Twitter</button>
@@ -182,32 +230,33 @@
 
   <div class="row-fluid section1">
     <div class="span5 offset1 asset">
-      <img class="img-polaroid" src="http://placehold.it/480x300">
+      <img class="img-polaroid" width="480px" height="300px" src="http://i.imgur.com/tNUlcQ3.png">
     </div>
   <div class="span5 copy">
   <p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<h3>What is this?</h3>
+Give&Take is a non-profit project that aims to make donations easy. Everyone has things they don't use
+anymore: clothings, old toys, etc. A good way to get rid of them and be a good person is to donate them
+to someone who needs them. But how do you find where to donate these things? Often people donate clothings
+in places that need books or toys where they need old blankets. <br><br>Give&Take will make the idea of donating
+much easier and therefore, practiced by many more!<br><br>
+This is a very inspiring project that will help people help others :)
   </p>
   </div>
   </div>
 <div class="row-fluid section2">
 <div class="span5 offset1 copy copy-right">
 <p>
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-</p>
+<h3>What is needed?</h3>
+First, we need to build a website that can host all the magic. In other words, we need to build the portal and
+database that will allow people to join and find what they need. Secondly, we need to populate the site with
+data. To do that, we will contact charity organizations and find some marketing solutions to ensure we reach
+a lot of people!<br><br>
+The funding will be used to build the website and, if successful, we will proceed with the next stages of the
+project.
 </div>
 <div class="span5 asset">
-<img class="img-polaroid" src="http://placehold.it/480x300"></img>
+<img class="img-polaroid" width="480px" height="300px" src="http://i.imgur.com/R8hZ13b.jpg"></img>
 </div>
   </div>
 
@@ -219,24 +268,25 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 <div class="accordion-group">
 <div class="accordion-heading">
 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-What does FAQ stand for?
+What countries will be involved in the project?
 </a>
 </div>
 <div id="collapseOne" class="accordion-body collapse">
 <div class="accordion-inner">
-Frequently Asqued Questions
+Our goal is to make it a global plataform that can help people located anywhere in the world to make a donation.
 </div>
 </div>
 </div>
 <div class="accordion-group">
   <div class="accordion-heading">
 <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2"  href="#collapseTwo">
-  What's a Frequently Asqued Question?
+  Will the charity institutions be charged for a space in the website?
 </a>
   </div>
   <div id="collapseTwo" class="accordion-body collapse">
     <div class="accordion-inner">
-      A question which is commonly asked by users.
+      No. This is a non-profit project and the idea is to help charity organizations (and other individuals that may need
+      a donation) to be known by those who have something to donate.
     </div>
   </div>
 </div>
@@ -247,11 +297,33 @@ Frequently Asqued Questions
 <div class="row-fluid footer">
 <div class="span12">
   <p>This work is licensed under the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC by-SA 3.0
-  </a>, without all the cruft that would otherwise be put at the bottom of the page.
+  </a>.
   </p>
 </div>
 </div>
 </div>
+<!-- /container -->
+   <!--   <div class="footer">
+        <p>&copy; Company 2013</p>
+      </div>-->
+
+
+
+	<!-- Le javascript
+	================================================== -->
+	<!-- Placed at the end of the document so the pages load faster 
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-transition.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-alert.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-modal.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-dropdown.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-scrollspy.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-tab.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-tooltip.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-popover.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-button.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-collapse.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-carousel.js"></script>
+	<script src="https://raw.github.com/twitter/bootstrap/master/js/bootstrap-typeahead.js"></script>-->
 </body>
 </html>
-
